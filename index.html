@@ -10,6 +10,7 @@
     <!-- Giao diện 1 -->
     <div id="homepage" class="homepage">
         <h1>Chuck Severance's Resume Registry</h1>
+        <!-- Đảm bảo sử dụng thẻ a với href chính xác -->
         <a href="#" id="loginLink">Please log in</a>
         <p>No Rows Found</p>
     </div>
@@ -17,19 +18,21 @@
     <!-- Giao diện 2 -->
     <div id="loginPage" class="login-page">
         <h2>Please Log In</h2>
-        <form>
+        <!-- Form với action và method -->
+        <form action="/submit" method="POST">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required><br>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required><br>
 
-            <button type="button" id="loginBtn">Log In</button>
+            <!-- Nút submit và cancel -->
+            <button type="submit" id="loginBtn">Log In</button>
             <button type="button" id="cancelBtn">Cancel</button>
         </form>
         <p>For a password hint, view source and find an account and password hint in the HTML comments.</p>
     </div>
 
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
